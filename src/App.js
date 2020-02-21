@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
 import './App.css';
+
 import UserInput from './components/UserInput/UserInput';
 import UserOutput from './components/UserOutput/UserOutput';
 import Validation from './components/Validation/Validation';
 import Char from './components/Char/Char';
+
+// import Radium, {StyleRoot} from 'radium';
 
 
 class App extends Component {
@@ -33,7 +36,7 @@ class App extends Component {
     const updatedText = text.join('');
     this.setState({
       userInput:updatedText
-    })
+    });
   }
 
 
